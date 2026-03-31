@@ -47,8 +47,6 @@ function render(action) {
     result = applySorting(result, state, action);
     result = applyPagination(result, state, action);
     
-
-
     sampleTable.render(result)
 }
 
