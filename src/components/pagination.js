@@ -35,8 +35,8 @@ export const initPagination = ({pages, fromRow, toRow, totalRows}, createPage) =
             }))
             // переносим код, который делали под @todo: #2.5 (обратите внимание, что rowsPerPage заменена на limit)
             fromRow.textContent = (page - 1) * limit + 1;                    // С какой строки выводим
-            toRow.textContent = Math.min((page * limit), pageCount);    // До какой строки выводим, если это последняя страница, то отображаем оставшееся количество
-            totalRows.textContent = pageCount;
+            toRow.textContent = Math.min((page * limit), total);    // До какой строки выводим, если это последняя страница, то отображаем оставшееся количество
+            totalRows.textContent = total;
         };
 
         return {
